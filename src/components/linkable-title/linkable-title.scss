@@ -1,0 +1,46 @@
+linkable-title {
+  display: inline-block;
+  position: relative;
+  &.icon {
+    margin-left: var(--icon-width, 2rem);
+    padding-left: var(--icon-gap, 0.5rem);
+  }
+  &.highlight {
+    animation: blinker 1s ease 1s;
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      .anchor-icon {
+        opacity: 1;
+      }
+    }
+    .anchor-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 100%;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      svg {
+        width: auto;
+        height: 1em;
+        path {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}
+
+@keyframes blinker {
+  25%,
+  75% {
+    opacity: 0;
+  }
+  0%,
+  50% {
+    opacity: 1;
+  }
+}

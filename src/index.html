@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Linkable title demo</title>
+
+  <script type="module" src="/build/linkable-title.esm.js"></script>
+  <script nomodule src="/build/linkable-title.js"></script>
+
+  <style>
+    .section {
+      width: 100%;
+      height: 80vh;
+    }
+
+    .green {
+      background: lightgreen;
+    }
+
+    .blue {
+      background: lightblue;
+    }
+
+    .red {
+      background: orangered;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="section blue"></div>
+  <linkable-title tag="h1" id="heading-1">I'm a heading and I can be linked</linkable-title>
+  <div class="section green"></div>
+  <linkable-title tag="h2" id="heading-2">
+    <div slot="icon">
+      <small>link</small>
+    </div>
+    I'm linkable with custom icon (not a pretty one)
+  </linkable-title>
+  <div class="section red"></div>
+  <linkable-title tag="h2" id="heading-3" no-icon>
+    I'm another heading with no icon
+  </linkable-title>
+  <div class="section red"></div>
+</body>
+
+</html>
