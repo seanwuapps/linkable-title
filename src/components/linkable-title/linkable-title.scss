@@ -1,9 +1,11 @@
 linkable-title {
+  --icon-width: 2rem;
+  --icon-gap: 0.4rem;
   display: inline-block;
   position: relative;
   &.icon {
-    margin-left: var(--icon-width, 2rem);
-    padding-left: var(--icon-gap, 0.5rem);
+    margin-left: var(--icon-width);
+    padding-left: var(--icon-gap);
   }
   &.highlight {
     animation: blinker 1s ease 1s;

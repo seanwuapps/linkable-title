@@ -1,3 +1,14 @@
+# linkable-title
+
+
+
+<!-- Auto Generated Below -->
+
+
+## Usage
+
+### Linkable-title
+
 `<linkable-title>` element is meant to be used like a heading element. You need to specify an `id` attribute for it to know what to link to.
 
 ### Default usage
@@ -33,3 +44,17 @@ linkable-title {
   --icon-gap: 0.4rem;
 }
 ```
+
+
+
+## Properties
+
+| Property | Attribute | Description                                       | Type      | Default |
+| -------- | --------- | ------------------------------------------------- | --------- | ------- |
+| `noIcon` | `no-icon` | If there's an icon to be displayed on hover/focus | `boolean` | `false` |
+| `tag`    | `tag`     | HTML tag to be used for the content               | `string`  | `'h4'`  |
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
