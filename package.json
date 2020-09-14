@@ -1,6 +1,6 @@
 {
   "name": "linkable-title",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A web component for users to easily link to parts of the web page.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
