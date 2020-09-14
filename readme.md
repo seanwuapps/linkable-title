@@ -6,8 +6,10 @@
 
 ### CDN
 
--  `<script type="module" src="https://cdn.jsdelivr.net/npm/linkable-title@latest/dist/linkable-title/linkable-title.esm.js"></script>`
--  `<script nomodule src="https://cdn.jsdelivr.net/npm/linkable-title@latest/dist/linkable-title/linkable-title.js"></script>`
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/linkable-title/dist/linkable-title/linkable-title.esm.js"></script>
+<script nomodule src="https://unpkg.com/linkable-title/dist/linkable-title/linkable-title.js"></script>
+```
 
 add the script tags in your html and the component will get lazy loaded.
 
