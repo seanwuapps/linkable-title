@@ -15,11 +15,12 @@
 
 ```html
 <linkable-title tag="h1" id="heading-1">I'm a heading and I can be linked</linkable-title>
+<linkable-title tag="h1" id="heading-2" icon-position="start">I have my icon on the left</linkable-title>
 ```
 
 ### Custom icon
 ```html
-<linkable-title tag="h2" id="heading-2">
+<linkable-title tag="h2" id="heading-3">
   <div slot="icon">
     <!-- go nuts here -->
     <small>link</small>
@@ -30,7 +31,7 @@
 
 ### No icon
 ```html
-<linkable-title tag="h2" id="heading-3" no-icon>
+<linkable-title tag="h2" id="heading-4" no-icon>
   I'm another heading with no icon
 </linkable-title>
 ```
@@ -49,10 +50,11 @@ linkable-title {
 
 ## Properties
 
-| Property | Attribute | Description                                       | Type      | Default |
-| -------- | --------- | ------------------------------------------------- | --------- | ------- |
-| `noIcon` | `no-icon` | If there's an icon to be displayed on hover/focus | `boolean` | `false` |
-| `tag`    | `tag`     | HTML tag to be used for the content               | `string`  | `'h4'`  |
+| Property       | Attribute       | Description                                       | Type               | Default |
+| -------------- | --------------- | ------------------------------------------------- | ------------------ | ------- |
+| `iconPosition` | `icon-position` | Position of icon                                  | `"end" \| "start"` | `'end'` |
+| `noIcon`       | `no-icon`       | If there's an icon to be displayed on hover/focus | `boolean`          | `false` |
+| `tag`          | `tag`           | HTML tag to be used for the content               | `string`           | `'h4'`  |
 
 
 ----------------------------------------------
