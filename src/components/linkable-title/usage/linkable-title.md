@@ -4,11 +4,12 @@
 
 ```html
 <linkable-title tag="h1" id="heading-1">I'm a heading and I can be linked</linkable-title>
+<linkable-title tag="h1" id="heading-2" icon-position="start">I have my icon on the left</linkable-title>
 ```
 
 ### Custom icon
 ```html
-<linkable-title tag="h2" id="heading-2">
+<linkable-title tag="h2" id="heading-3">
   <div slot="icon">
     <!-- go nuts here -->
     <small>link</small>
@@ -19,7 +20,7 @@
 
 ### No icon
 ```html
-<linkable-title tag="h2" id="heading-3" no-icon>
+<linkable-title tag="h2" id="heading-4" no-icon>
   I'm another heading with no icon
 </linkable-title>
 ```
