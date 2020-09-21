@@ -34,7 +34,7 @@ linkable-title {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 100%;
+      left: calc(100% + var(--icon-gap));
       opacity: 0;
       transition: opacity 0.2s ease;
       svg {
