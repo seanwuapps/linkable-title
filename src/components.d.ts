@@ -8,6 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface LinkableTitle {
         /**
+          * Position of icon
+         */
+        "iconPosition": 'start' | 'end';
+        /**
           * If there's an icon to be displayed on hover/focus
          */
         "noIcon": boolean;
@@ -30,6 +34,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface LinkableTitle {
+        /**
+          * Position of icon
+         */
+        "iconPosition"?: 'start' | 'end';
         /**
           * If there's an icon to be displayed on hover/focus
          */

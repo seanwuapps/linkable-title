@@ -4,11 +4,23 @@ linkable-title {
   display: inline-block;
   position: relative;
   &.icon {
-    margin-left: var(--icon-width);
-    padding-left: var(--icon-gap);
+    margin-right: var(--icon-width);
+    padding-right: var(--icon-gap);
   }
   &.highlight {
     animation: blinker 1s ease 1s;
+  }
+  &.start {
+    &.icon {
+      margin-right: 0;
+      padding-right: 0;
+      margin-left: var(--icon-width);
+      padding-left: var(--icon-gap);
+    }
+    .anchor-icon {
+      right: 100%;
+      left: auto;
+    }
   }
   a {
     text-decoration: none;
@@ -22,7 +34,7 @@ linkable-title {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 100%;
+      left: 100%;
       opacity: 0;
       transition: opacity 0.2s ease;
       svg {
